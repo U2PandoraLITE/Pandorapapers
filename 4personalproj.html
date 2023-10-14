@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Personal Projects</title>
+    <link rel="icon" type="image/x-icon" href="images/book.ico">
+    <style>
+      @font-face {
+        font-family: "woo";
+        src: url("fonts/coopablack.ttf");
+      }
+      .srt {
+        font-family: woo;
+        position: absolute;
+        z-index: 3;
+        font-size: 70px;
+        color: #f9ebff;
+        outline-color: #f0dafa;
+        outline: 5px solid;
+        border-radius: 5px;
+        padding: 30px;
+        background-color: #4f57ca ;
+        margin-left: 365px;
+        margin-top: 210px;
+        text-align: center;
+      }
+      .srt2 {
+        font-family: woo;
+        position: absolute;
+        z-index: 4;
+        margin-top: 30px;
+        font-size: 40px;
+        color: #f9ebff;
+        outline-color: #f0dafa;
+        outline: 5px solid;
+        border-radius: 5px;
+        padding: 30px;
+        background-color: #4f57ca;
+        margin-left: 320px;
+        margin-right: 270px;
+        margin-top: 380px;
+        text-align: center;
+      }
+      .dnc {
+        width: 1350px;
+        margin-left: -10px;
+        margin-top: -100px;
+        position: absolute;
+        pointer-events: none;
+        user-select: none;
+      }
+      body {
+        background-color: #ffeff4;
+        background-image: url("images/bluu.png");
+        background-size: 50%;
+        background-repeat: repeat-x;
+        background-position: top left;
+      }
+      .myprojects {
+        font-family: woo;
+        font-size: 80px;
+        text-align: center;
+        margin-top: 0px;
+        color: #f9ebff;
+      }
+      .silly {
+        font-family: woo;
+        font-size: 23px;
+        text-align: center;
+        margin-top: -70px;
+        margin-left: 300px;
+        margin-right: 300px;
+        color: #cdc8e0;
+      }
+      button.dropbtn {
+        background-color: #3b2d8b;
+        color: #f9ebff;
+        font-family: woo;
+        padding-left: 53px;
+        padding-right: 53px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 20px;
+        border: none;
+        margin-top: 0px;
+        border-radius: 10px;
+        right: 100%;
+        transition: 0.3s;
+      }
+
+      .dropdown {
+        position: absolute;
+        display: inline-block;
+      }
+
+      div.dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #443ea0;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin-top: 0px;
+        border-radius: 10px;
+      }
+
+      .dropdown-content a {
+        font-family: woo;
+        color: #f0dafa;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: #4151ac;
+        border-radius: 10px;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: #493aa0;
+      }
+
+      div.bltpt {
+        font-family: woo;
+        margin-left: 200px;
+        margin-right: 200px;
+        color: #421e42;
+      }
+      .projects {
+        align-content: space-evenly;
+        gap: 30px;
+        row-gap: 70px;
+        display: grid;
+        margin-left: 10px;
+        margin-top: -10px;
+        grid-template-columns: auto auto auto;
+      }
+      .petrels {
+        background-color: transparent;
+        border-color: transparent;
+        user-select: none;
+        pointer-events: none;
+      }
+      .keepaway {
+        background-color: transparent;
+        border-color: transparent;
+        user-select: none;
+        pointer-events: none;
+      }
+      .lenny {
+        background-color: transparent;
+        border-color: transparent;
+        user-select: none;
+        pointer-events: none;
+      }
+      #sample1 {
+        width: 350px;
+        margin-left: 0px;
+        margin-top: 80px;
+      }
+      #sample2 {
+        width: 350px;
+        margin-top: 75px;
+      }
+      #sample3 {
+        width: 365px;
+        margin-top: 75px;
+        margin-left: -10px;
+       /* rotate: 10deg; < comment in when page opens */
+      }
+      .twitter {
+        width: 75px;
+        height: 75px;
+        background-color: transparent ;
+        border: none;
+        margin-top: 25px;
+        margin-left: 260px;
+      }
+      .insta {
+        width: 75px;
+        height: 75px;
+        background-color: transparent ;
+        border: none;
+        margin-top: 25px;
+        margin-left: 145px;
+      }
+      .discord {
+        width: 75px;
+        height: 75px;
+        background-color: transparent ;
+        border: none;
+        margin-top: 25px;
+        margin-left: 85px;
+      }
+    </style>
+  </head>
+
+  <!-- html goes down HEREEE ↓↓↓ -->
+<p class="srt">Stop right there!</p>
+<p class="srt2">This part of the site isn't finished yet. Check back soon!</p>
+<img class="dnc" src="images/dnc.png">
+  <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a href="1main.html">Home</a>
+      <a href="3allreviews.html">All Reviews</a>
+      <a href="2whoami.html">Who am I?</a>
+    </div>
+  </div>
+  <p class="myprojects">My Projects</p>
+  <p class="silly">Like any good creative, I have about a million and two projects just collecting dust in my mind (and in my notebooks). Here are the ones I'm actually working on!</p>
+  <div class="projects">
+    <button class="petrels">
+      <!-- <a href="personal projects/petrels.html">-->
+        <img id="sample1" src="images/petrels.png" />
+      </a>
+  </button>
+  <button class="keepaway">
+    <!-- <a href="personal projects/keepaway.html">-->
+      <img id="sample2" src="images/keepaway.png" />
+    </a>
+</button>
+<button class="lenny">
+ <!-- <a href="personal projects/lennyledger.html"> -->
+    <img id="sample3" src="images/lenny.png" />
+  </a>
+</button>
+    <!--u can just copy the above code when u wanna add another!! 
+    its a grid so it automatically formats-->
+  </div>
+  <div>
+    <button class="twitter">
+      <a href="https://twitter.com/U2PandoraLITE">
+      <img src="images/twitblu.png" class="twitter" alt="Go to my Twitter!"></a>
+   </button>
+   <button class="insta">
+    <a href="insert">
+    <img src="images/instablu.png" class="insta" alt="Go to my Instagram!"></a>
+  </button>
+  <button class="discord">
+    <a href="insert soon">
+    <img src="images/discblu.png" class="discord" alt="Go to my Discord server!"></a>
+  </button>
+  </div>
+
+  </script>
+</html>

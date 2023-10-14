@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>All Reviews</title>
+    <link rel="icon" type="image/x-icon" href="images/book.ico">
+    <style>
+      @font-face {
+        font-family: "woo";
+        src: url("fonts/coopablack.ttf");
+      }
+      body {
+        background-color: #ffeff4;
+        background-image: url("images/alttopper3.png");
+        background-size: 23%;
+        background-repeat: repeat-x;
+        background-position: top left;
+      }
+      .ar {
+        font-family: woo;
+        font-size: 80px;
+        text-align: center;
+        margin-top: 0px;
+        color: #f9ebff;
+      }
+      button.dropbtn {
+        background-color: #c94d87;
+        color: #f9ebff;
+        font-family: woo;
+        padding-left: 53px;
+        padding-right: 53px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 20px;
+        border: none;
+        margin-top: 0px;
+        border-radius: 10px;
+        right: 100%;
+        transition: 0.3s;
+      }
+
+      .dropdown {
+        position: absolute;
+        display: inline-block;
+      }
+
+      div.dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #e24e93;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin-top: 0px;
+        border-radius: 10px;
+      }
+
+      .dropdown-content a {
+        font-family: woo;
+        color: #f0dafa;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: #ec5da0;
+        border-radius: 10px;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: #ec5da0;
+      }
+
+      div.bltpt {
+        font-family: woo;
+        margin-left: 200px;
+        margin-right: 200px;
+        color: #421e42;
+      }
+      .samples {
+        size: 100%;
+        align-content: space-evenly;
+        gap: 10px;
+        row-gap: 70px;
+        display: grid;
+        margin-left: 100px;
+        grid-template-columns: auto auto auto auto;
+        pointer-events: none;
+
+      }
+      #sample1 {
+        border: 5px solid;
+        border-color: #CE5374; 
+      }
+      #sample2 {
+        border: 5px solid;
+        border-color: #CE5374; 
+      }
+      #sample3 {
+        border: 5px solid;
+        border-color: #CE5374; 
+      }
+      #sample4 {
+        border: 5px solid;
+        border-color: #CE5374; 
+      }
+      #thumbnail1 {
+        width: 180px;
+        margin-left: 1045px;
+        margin-top: -255px;
+        position: absolute;
+        border: 5px solid;
+        border-color: #CE5374;
+        pointer-events: none;
+      }
+      #thumbnail2 {
+        width: 180px;
+        margin-left: 735px;
+        margin-top: -255px;
+        position: absolute;
+        border: 5px solid;
+        border-color: #CE5374;
+        pointer-events: none;
+      }
+      #thumbnail3 {
+        width: 180px;
+        margin-left: 424px;
+        margin-top: -255px;
+        position: absolute;
+        border: 5px solid;
+        border-color: #CE5374;
+        pointer-events: none;
+      }
+      #thumbnail4 {
+        width: 180px;
+        margin-left: 112px;
+        margin-top: -255px;
+        position: absolute;
+        border: 5px solid;
+        border-color: #CE5374;
+        pointer-events: none;
+      }
+      .RM {
+        align-content: space-evenly;
+        gap: 10px;
+        row-gap: 70px;
+        display: grid;
+        margin-left: 100px;
+        grid-template-columns: auto auto auto auto;
+      }
+      .RM a:visited {
+        color:#a72b4c;
+      }
+      #rm1 {
+        position: absolute;
+        margin-left: 53px;
+        background-color: #ffb4dd;
+        padding: 5px;
+        font-family: woo;
+        margin-top: 225px;
+        font-size: 15px;
+        text-decoration: none;
+        background-color:#FFDBEE; 
+        border: 3px solid; 
+        border-color: #CE5374;
+        color:#a72b4c;
+        border-radius: 10px;
+      }      
+      #rm2 {
+        position: absolute;
+        margin-left: 370px;
+        background-color: #ffb4dd;
+        padding: 5px;
+        font-family: woo;
+        margin-top: 225px;
+        font-size: 15px;
+        text-decoration: none;
+        background-color:#FFDBEE; 
+        border: 3px solid; 
+        border-color: #CE5374;
+        color:#a72b4c;
+        border-radius: 10px;
+      }
+      #rm3 {
+        position: absolute;
+        margin-left: 682px;
+        background-color: #ffb4dd;
+        padding: 5px;
+        font-family: woo;
+        margin-top: 225px;
+        font-size: 15px;
+        text-decoration: none;
+        background-color:#FFDBEE; 
+        border: 3px solid; 
+        border-color: #CE5374;
+        color:#a72b4c;
+        border-radius: 10px;
+      }
+      #rm4 {
+        position: absolute;
+        margin-left: 1000px;
+        background-color: #ffb4dd;
+        padding: 5px;
+        font-family: woo;
+        margin-top: 225px;
+        font-size: 15px;
+        text-decoration: none;
+        background-color:#FFDBEE; 
+        border: 3px solid; 
+        border-color: #CE5374;
+        color:#a72b4c;
+        border-radius: 10px;
+      }
+      a:link {
+        color: #CE5374;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      .yoo {
+        font-family: woo;
+        font-size: 60px;
+        text-align: center;
+        margin-top: 0px;
+        color: #a72b4c;
+      }
+      .hii {
+        font-family: woo;
+        font-size: 60px;
+        text-align: center;
+        margin-top: -60px;
+        color: #a72b4c;
+      }
+      .links {
+        background-color: #ffcde8;
+        font-family: woo;
+        color: #a72b4c;
+        padding: 15px;
+        border-radius: 5px;
+        border: 5px solid;
+        border-color: #CE5374;
+        max-width: 600px;
+        min-width: 654px;
+        margin-left: 300px;
+        margin-top: -30px;
+      }
+      .twitter {
+        width: 75px;
+        height: 75px;
+        background-color: transparent ;
+        border: none;
+        margin-left: 260px;
+        margin-top: 5px;
+      }
+      .insta {
+        width: 75px;
+        height: 75px;
+        background-color: transparent ;
+        border: none;
+        margin-left: 145px;
+        margin-top: 5px;
+      }
+      .discord {
+        width: 75px;
+        height: 75px;
+        background-color: transparent ;
+        border: none;
+        margin-left: 85px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+
+  <!-- html goes down HEREEE ↓↓↓ -->
+
+  <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a href="1main.html">Home</a>
+      <a href="2whoami.html">Who am I?</a>
+      <a href="4personalproj.html">Personal Projects</a>
+    </div>
+  </div>
+  <p class="ar">All Reviews</p>
+  <div class="RM">
+    <button id="rm1">Read more...</button>
+    <button id="rm2">Read more...</button>
+    <button id="rm3">
+    <a href="reviews/the strangers.html">Read more...</a></button>
+    <button id="rm4">
+    <a href="reviews/wildseedwitch.html">Read more...</a>
+  </button>
+
+</div>
+  <div class="samples">
+    <img id="sample1" src="images/revimg/sample.png" />
+    <img id="sample2" src="images/revimg/sample.png" />
+    <img id="sample3" src="images/revimg/sample.png" />
+    <img id="sample4" src="images/revimg/sample.png" />
+    <!--u can just copy the above code when u wanna add another!! 
+    its a grid so it automatically formats-->
+  </div>
+  <div class="thumbnails">
+  <img id="thumbnail1" src="images/revimg/review thumbnail.png"/>
+  <img id="thumbnail2" src="images/revimg/review thumbnail.png"/>
+  <img id="thumbnail3" src="images/revimg/review thumbnail.png"/>
+  <img id="thumbnail4" src="images/revimg/review thumbnail.png"/>
+  </div>
+  <p class="yoo">Above are my most recent,</p>
+  <p class="hii">below is everything!</p>
+  <div class="links">
+    <p>A book about kids & their parents. Read about <a href="reviews/the strangers.html">The Strangers.</a> </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien est, posuere a rhoncus quis, pulvinar dapibus odio. Maecenas ut sem porta, tristique leo et, convallis est. Donec sod. Read more about
+      <a href="reviews/wildseedwitch.html">Wildseed Witch.</a> </p>
+  </div>
+  <div>
+    <button class="twitter">
+      <a href="https://twitter.com/U2PandoraLITE">
+      <img src="images/twitter.png" class="twitter" alt="Go to my Twitter!"></a>
+   </button>
+   <button class="insta">
+    <a href="insert">
+    <img src="images/insta.png" class="insta" alt="Go to my Instagram!"></a>
+  </button>
+  <button class="discord">
+    <a href="insert soon">
+    <img src="images/discord.png" class="discord" alt="Go to my Discord server!"></a>
+  </button>
+  </div>
+  </script>
+</html>
