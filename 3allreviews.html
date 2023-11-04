@@ -19,7 +19,6 @@
         font-family: woo;
         font-size: 80px;
         text-align: center;
-        position: relative;
         margin-top: 25px;
         color: #f9ebff;
       }
@@ -99,6 +98,7 @@
       }
       .socials {
         align-content: space-evenly;
+        place-items: center;
         gap: 10px;
         display: grid;
         grid-template-columns: auto auto auto;
@@ -111,9 +111,8 @@
       .twitter {
         width: 75px;
         height: 75px;
-        background-color: transparent ;
+        background-color: transparent;
         border: none;
-        margin-left: 260px;
         margin-top: 5px;
       }
       .insta {
@@ -121,7 +120,6 @@
         height: 75px;
         background-color: transparent ;
         border: none;
-        margin-left: 145px;
         margin-top: 5px;
       }
       .discord {
@@ -129,7 +127,6 @@
         height: 75px;
         background-color: transparent ;
         border: none;
-        margin-left: 85px;
         margin-top: 5px;
       }
     </style>
@@ -152,7 +149,7 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien est, posuere a rhoncus quis, pulvinar dapibus odio. Maecenas ut sem porta, tristique leo et, convallis est. Donec sod. Read more about
       <a href="reviews/wildseedwitch.html" class="links">Wildseed Witch.</a> </p>
   </div>
-  <div>
+  <div class="socials">
     <button class="twitter">
       <a href="https://twitter.com/U2PandoraLITE">
       <img src="images/twitter.png" class="twitter" alt="Go to my Twitter!"></a>
